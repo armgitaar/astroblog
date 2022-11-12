@@ -9,6 +9,7 @@ import { defineConfig } from 'astro/config';
 import node from '@astrojs/node';
 
 export default defineConfig({
+renderers: ['@astrojs/renderer-preact'],
   output: 'server',
   adapter: node({
     mode: 'standalone'
@@ -16,7 +17,7 @@ export default defineConfig({
 });
 
 // @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
+//export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Enable the Preact renderer to support Preact JSX components.
-	renderers: ['@astrojs/renderer-preact'],
+	//renderers: ['@astrojs/renderer-preact'],
 });
